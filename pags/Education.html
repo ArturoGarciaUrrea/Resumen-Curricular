@@ -18,9 +18,78 @@
   <body>
     <h2>Arturo Garcia</h2>
     <ul>
+      <li><strong>Nombre:</strong>Arturo</li>
+      <li><strong>Apellidos:</strong>García Urrea</li>
+      <li><strong>Edad:</strong>26 años</li>
+    </ul>
+    <ul>
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="experience.html">Experiencia</a></li>
     </ul>
+    <h3>Informacion de Perfil</h3>
+
+    <table border ="2">
+      <thead>
+        <tr>
+          <th>Año</th>
+          <th>Institución</th>
+          <th>Lugar</th>
+          <th>Culminado</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2005</td>
+          <td>I.E.D. San Josemaría Escrivá de Balaguer,</td>
+          <td>Chía, Cundinamarca</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2012</td>
+          <td>ICFES</td>
+          <td>Bogotá, Colombia</td>
+          <td>Si</td>
+        </tr>
+        <tr>
+          <td>2015</td>
+          <td>Universidad Latina de Panamá</td>
+          <td>Ciudad de Panamá, Panamá</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td>2017</td>
+          <td>Next University</td>
+          <td>Ciudad de Panamá, Panamá</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>Agregar Educación</h3>
+<form id="add_education_row">
+  <br><label for="year"><strong>Año</strong></label>
+  <select name="year" id="year">
+    <option>Seleccione año</option>
+    <option>2017</option>
+    <option>2016</option>
+    <option>2015</option>
+    <option>2014</option>
+    <option>2013</option>
+    <option>2012</option>
+    <option>2011</option>
+    <option>2010</option>
+    <option>anterior a 2010</option>
+  </select>
+  <br><br><label for="institute"><strong>Institución</strong></label>
+  <input type="text" requiered id="institute">
+  <br><br><label for="site"><strong>Lugar____</strong></label>
+  <textarea name="site" id="site" rows="8" cols="40"></textarea>
+  <br><br><label><strong>Culminado</strong></label> <br>
+  <input type="radio" id="yes" name="yes">
+  <label for="yes">Si</label>
+  <input type="radio" id="no" name="yes">
+  <label for="no">No</label>
+  <br><br><input type="submit">
+</form>
 
   </body>
   <footer>
